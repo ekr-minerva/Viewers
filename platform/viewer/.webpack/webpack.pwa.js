@@ -116,7 +116,7 @@ module.exports = (env, argv) => {
         swDest: 'sw.js',
         swSrc: path.join(SRC_DIR, 'service-worker.js'),
         // Increase the limit to 4mb:
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
         // Need to exclude the theme as it is updated independently
         exclude: [/theme/],
       }),
