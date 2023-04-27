@@ -355,6 +355,22 @@ const toolbarButtons = [
       ],
     },
   },
+  {
+    id: 'ReferenceLines',
+    type: 'ohif.toggle',
+    props: {
+      type: 'tool',
+      icon: 'tool-referenceLines',
+      label: 'ReferenceLines',
+      commands: [
+        {
+          commandName: 'toggleReferenceLines',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   // More...
   {
     id: 'MoreTools',
@@ -428,18 +444,18 @@ const toolbarButtons = [
             context: 'CORNERSTONE',
           },
         ]),
-        _createToggleButton(
-          'ReferenceLines',
-          'tool-referenceLines', // change this with the new icon
-          'Reference Lines',
-          [
-            {
-              commandName: 'toggleReferenceLines',
-              commandOptions: {},
-              context: 'CORNERSTONE',
-            },
-          ]
-        ),
+        // _createToggleButton(
+        //   'ReferenceLines',
+        //   'tool-referenceLines', // change this with the new icon
+        //   'Reference Lines',
+        //   [
+        //     {
+        //       commandName: 'toggleReferenceLines',
+        //       commandOptions: {},
+        //       context: 'CORNERSTONE',
+        //     },
+        //   ]
+        // ),
         _createToolButton(
           'StackScroll',
           'tool-stack-scroll',

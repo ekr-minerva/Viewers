@@ -129,6 +129,7 @@ function modeFactory() {
         'Layout',
         'MPR',
         'Crosshairs',
+        'ReferenceLines',
         'MoreTools',
       ]);
 
