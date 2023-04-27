@@ -4,7 +4,7 @@
   "Description": "Description",
   "Empty": "Empty",
   "Instances": "Instances",
-  "MRN": "MRN",
+  "MRN": "Patient ID",
   "NumOfStudiesHiggerThan100Message": "Filter the list to 100 studies or less to enable sorting",
   "Modality": "Modality",
   "PatientName": "Patient Name",
