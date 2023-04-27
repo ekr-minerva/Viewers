@@ -53,7 +53,7 @@ function processResults(qidoStudies) {
       mrn: getString(qidoStudy['00100020']) || '', // medicalRecordNumber
       patientName: utils.formatPN(getName(qidoStudy['00100010'])) || '',
       instances: Number(getString(qidoStudy['00201208'])) || 0, // number
-      description: getString(qidoStudy['00081030']) || '',
+      description: getString(qidoStudy['00200010']) || '', // EKR changed
       modalities:
         getString(
           getModalities(qidoStudy['00080060'], qidoStudy['00080061'])
@@ -176,7 +176,7 @@ function mapParams(params, options = {}) {
     //PatientID: withWildcard(params.patientId),
     '00100020': withWildcard(params.patientId), // Temporarily to make the tests pass with dicomweb-server.. Apparently it's broken?
     AccessionNumber: withWildcard(params.accessionNumber),
-    StudyDescription: withWildcard(params.studyDescription),
+    StudyID: withWildcard(params.studyDescription), // EKR Change DICOM Search parameter
     ModalitiesInStudy: params.modalitiesInStudy,
     // Other
     limit: params.limit || 101,
