@@ -156,7 +156,7 @@ function PanelStudyBrowserTracking({
       const displaySet = displaySetService.getDisplaySetByUID(
         dSet.displaySetInstanceUID
       );
-      const imageIds = dataSource.getImageIdsForDisplaySet(displaySet);
+      const imageIds = dataSource.getImageIdsForDisplaySet(displaySet, true);
       const imageId = imageIds[Math.floor(imageIds.length / 2)];
 
       // TODO: Is it okay that imageIds are not returned here for SR displaysets?
@@ -218,7 +218,7 @@ function PanelStudyBrowserTracking({
             setJumpToDisplaySet(displaySetInstanceUID);
           }
 
-          const imageIds = dataSource.getImageIdsForDisplaySet(displaySet);
+          const imageIds = dataSource.getImageIdsForDisplaySet(displaySet, true);
           const imageId = imageIds[Math.floor(imageIds.length / 2)];
 
           // TODO: Is it okay that imageIds are not returned here for SR displaysets?

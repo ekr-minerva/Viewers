@@ -447,7 +447,7 @@ function createDicomWebApi(dicomWebConfig, userAuthenticationService) {
       setSuccessFlag();
     },
     deleteStudyMetadataPromise,
-    getImageIdsForDisplaySet(displaySet) {
+    getImageIdsForDisplaySet(displaySet, thumbnail = false) {
       const images = displaySet.images;
       const imageIds = [];
 
@@ -463,6 +463,7 @@ function createDicomWebApi(dicomWebConfig, userAuthenticationService) {
             const imageId = this.getImageIdsForInstance({
               instance,
               frame,
+              thumbnail
             });
             imageIds.push(imageId);
           }
@@ -474,11 +475,12 @@ function createDicomWebApi(dicomWebConfig, userAuthenticationService) {
 
       return imageIds;
     },
-    getImageIdsForInstance({ instance, frame }) {
+    getImageIdsForInstance({ instance, frame, thumbnail }) {
       const imageIds = getImageId({
         instance,
         frame,
         config: dicomWebConfig,
+        thumbnail,
       });
       return imageIds;
     },
