@@ -179,7 +179,7 @@ function mapParams(params, options = {}) {
     StudyID: withWildcard(params.studyDescription), // EKR Change DICOM Search parameter
     ModalitiesInStudy: params.modalitiesInStudy,
     // Other
-    limit: params.limit || 101,
+    limit: params.limit || 201, // EKR extenden limit
     offset: params.offset || 0,
     fuzzymatching: options.supportsFuzzyMatching === true,
     includefield: commaSeparatedFields, // serverSupportsQIDOIncludeField ? commaSeparatedFields : 'all',
