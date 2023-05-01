@@ -359,7 +359,7 @@ const toolbarButtons = [
     id: 'ReferenceLines',
     type: 'ohif.toggle',
     props: {
-      type: 'tool',
+      type: 'toggle',
       icon: 'tool-referenceLines',
       label: 'ReferenceLines',
       commands: [
