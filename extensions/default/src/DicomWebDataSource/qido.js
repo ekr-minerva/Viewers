@@ -167,7 +167,7 @@ function mapParams(params, options = {}) {
 
   const { supportsWildcard } = options;
   const withWildcard = value => {
-    return supportsWildcard && value ? `*${value}*` : value;
+    return supportsWildcard && value ? `*${value.trim()}*` : value; //  EKR: added trim to fix error
   };
 
   const parameters = {
