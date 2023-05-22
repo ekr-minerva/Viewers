@@ -1469,43 +1469,43 @@
   resolved "https://registry.npmjs.org/@cornerstonejs/codec-openjph/-/codec-openjph-2.4.2.tgz#e96721d56f6ec96f7f95c16321d88cc8467d8d81"
   integrity sha512-lgdvBvvNezleY+4pIe2ceUsJzlZe/0PipdeubQ3vZZOz3xxtHHMR1XFCl4fgd8gosR8COHuD7h6q+MwgrwBsng==
 
-"@cornerstonejs/core@^0.46.2":
-  version "0.46.2"
-  resolved "https://registry.npmjs.org/@cornerstonejs/core/-/core-0.46.2.tgz#89ba0d27f491aab8b0a22d15ce5ed601ee23d2ec"
-  integrity sha512-HHActbdv3np/QXmQPl+DOqVMXPeOXbkqDov1SagF1om6Me4V7O8N2HbM4CgKCdf2VrEId6h0BL3+MG3Cxn7LPQ==
+"@cornerstonejs/core@^0.47.3":
+  version "0.47.3"
+  resolved "https://registry.yarnpkg.com/@cornerstonejs/core/-/core-0.47.3.tgz#3ba0157564b23c3f7f961f35ed8cacb4f3b9b581"
+  integrity sha512-bSJEzrC6xmcwU7zaTl0NqQ9T5n2CYlsDJERKZIn2oTVzwzBMxWEAsFs5v5HuMj4/JrOsE7QkrYSLQpk9c3qX6g==
   dependencies:
     "@kitware/vtk.js" "27.3.1"
     detect-gpu "^5.0.22"
     gl-matrix "^3.4.3"
     lodash.clonedeep "4.5.0"
 
-"@cornerstonejs/dicom-image-loader@^0.6.4":
-  version "0.6.4"
-  resolved "https://registry.npmjs.org/@cornerstonejs/dicom-image-loader/-/dicom-image-loader-0.6.4.tgz#8020402b11dd78df52957345ca57ed8c05b2999b"
-  integrity sha512-+y9NklTFYlq61frxKcJ2u+0h9zfKKiv20N28N5qBr3Ie6CFcNrY51ETkujNnNKKRUBvxXDidjVdY+j+MSPPJKQ==
+"@cornerstonejs/dicom-image-loader@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@cornerstonejs/dicom-image-loader/-/dicom-image-loader-0.6.8.tgz#e9d5c24959d74981b3ccca3641617b2c34106355"
+  integrity sha512-wYKPXprDYgHrsz2tNf2o0UL0Mr4YcUF4xalQqdLxfrgyUExQKHoDigXmEAwNVokSlS7rNz6NplLXeTbNJ2QSwg==
   dependencies:
     "@cornerstonejs/codec-charls" "^1.2.3"
     "@cornerstonejs/codec-libjpeg-turbo-8bit" "^1.2.2"
     "@cornerstonejs/codec-openjpeg" "^1.2.2"
     "@cornerstonejs/codec-openjph" "^2.4.2"
-    "@cornerstonejs/core" "^0.46.2"
+    "@cornerstonejs/core" "^0.47.3"
     dicom-parser "^1.8.9"
     pako "^2.0.4"
     uuid "^9.0.0"
 
-"@cornerstonejs/streaming-image-volume-loader@^0.20.2":
-  version "0.20.2"
-  resolved "https://registry.npmjs.org/@cornerstonejs/streaming-image-volume-loader/-/streaming-image-volume-loader-0.20.2.tgz#0df2ed5afd012d2851356af01eed48646d3a6c60"
-  integrity sha512-2TYoJ0wpE9KDpn8adfmTq0xOb/Xg7jhEyOuBnrr3il/NFvOfMlJieJVCYM0v3hyoANfqmDcFBqqtlm346VOMdw==
+"@cornerstonejs/streaming-image-volume-loader@^0.20.6":
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/@cornerstonejs/streaming-image-volume-loader/-/streaming-image-volume-loader-0.20.6.tgz#7ab7905ca0ad9501397f553ce80fe0712971bac0"
+  integrity sha512-lFdCWSVOJR/oU76xOJ7kAfdZzQfSNtCYTcYjuJP1uTBiccwm/MQOdpPgEpgksca1p8qi1PE2zWaQJWtspNtosw==
   dependencies:
-    "@cornerstonejs/core" "^0.46.2"
+    "@cornerstonejs/core" "^0.47.3"
 
-"@cornerstonejs/tools@^0.67.2":
-  version "0.67.2"
-  resolved "https://registry.npmjs.org/@cornerstonejs/tools/-/tools-0.67.2.tgz#7b7c6aac4ec7eaa84a438198837e657328e3c8a2"
-  integrity sha512-nOg2byAVrdMj3DqLYVT7qbrl2Sz6V82xtfFYJ4oQeGul/u/1AvHj4SSZs7MTV63Li3KP2ax/ZghCjral+exaVg==
+"@cornerstonejs/tools@^0.67.6":
+  version "0.67.6"
+  resolved "https://registry.yarnpkg.com/@cornerstonejs/tools/-/tools-0.67.6.tgz#cb9170d63aa2ea67a452b6184d30333a5024b3c7"
+  integrity sha512-Kq00AQ1/510miDMdl7cE/2pFasLQaQMZFssrkOMlkeX7VYVOePd6ErTiAz/yfSVxxBeocGyquA1ZwWqBxRK1jA==
   dependencies:
-    "@cornerstonejs/core" "^0.46.2"
+    "@cornerstonejs/core" "^0.47.3"
     lodash.clonedeep "4.5.0"
     lodash.get "^4.4.2"
 
