@@ -196,16 +196,14 @@ function modeFactory({ modeConfiguration }) {
       const isValid =
         modalities_list.includes('CT') &&
         modalities_list.includes('PT') &&
-        !invalidModalities.some(modality =>
-          modalities_list.includes(modality)
-        ) &&
-        // This is study is a 4D study with PT and CT and not a 3D study for the tmtv
-        // mode, until we have a better way to identify 4D studies we will use the
-        // StudyInstanceUID to identify the study
-        // Todo: when we add the 4D mode which comes with a mechanism to identify
-        // 4D studies we can use that
-        study.studyInstanceUid !==
-          '1.3.6.1.4.1.12842.1.1.14.3.20220915.105557.468.2963630849';
+        !invalidModalities.some(modality => modalities_list.includes(modality)); //&&
+      // This is study is a 4D study with PT and CT and not a 3D study for the tmtv
+      // mode, until we have a better way to identify 4D studies we will use the
+      // StudyInstanceUID to identify the study
+      // Todo: when we add the 4D mode which comes with a mechanism to identify
+      // 4D studies we can use that
+      //study.studyInstanceUid !==
+      //  '1.3.6.1.4.1.12842.1.1.14.3.20220915.105557.468.2963630849';
 
       // there should be both CT and PT modalities and the modality should not be SM
       return isValid;
