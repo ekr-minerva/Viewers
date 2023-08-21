@@ -190,8 +190,6 @@ module.exports = (env, argv) => {
         chunkFilename: '[id].css',
       })
     );
-  } else {
-    mergedConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
   }
 
   return mergedConfig;
